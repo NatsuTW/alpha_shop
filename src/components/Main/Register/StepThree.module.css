@@ -1,0 +1,46 @@
+.form__container {
+  margin-top: 64px;
+}
+
+.form__title {
+  display: flex;
+  flex: 0 0 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.form__body {
+  height: 270px;
+  margin-top: 24px;
+}
+
+.input__container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+:global(.input__card__name),
+:global(.input__card__number) {
+  grid-column: 1/5;
+}
+
+:global(.input__card__date) {
+  grid-column: 1/4;
+}
+
+:global(.input__card__cvc) {
+  grid-column: 4/7;
+}
+
+.input__label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--input-label);
+  margin-bottom: 8px;
+}
