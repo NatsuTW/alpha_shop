@@ -17,6 +17,7 @@
   height: 1px;
   margin: 0px 8px;
   border: 1.5px solid var(--done-progress-border);
+  background-color: var(--done-progress-border)
 }
 
 .progress__circle {

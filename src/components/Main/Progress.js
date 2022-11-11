@@ -1,11 +1,11 @@
-import ProgressStep from "./Register/ProgressStep";
-import ProgressControl from "./Register/ProgressControl";
-import StepOne from "./Register/StepOne";
+import ProgressStep from "./Progress/ProgressStep";
+import ProgressControl from "./Progress/ProgressControl";
+import StepOne from "./Progress/StepOne";
 // 先渲染Step One的表單，後續會實作換頁功能
 
-import styles from "./Register.module.css"
+import styles from "./Progress.module.css"
 
-export default function Register() {
+export default function Progress() {
   return (
     <section className={styles.register__container}>
       <h2 className={styles.register__title}>結帳</h2>
