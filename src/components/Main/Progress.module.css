@@ -1,8 +1,7 @@
 .progress__container {
+  width: 45%;
   margin: 0px 15px;
-  max-width: 50%;
   height: 670px;
-  /* 現階段先將container的max-width設定為50%,追加main以及cart部分時再利用Flex做調整*/
   position: relative;
 }
 
