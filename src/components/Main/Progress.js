@@ -7,8 +7,8 @@ import styles from "./Progress.module.css"
 
 export default function Progress() {
   return (
-    <section className={styles.register__container}>
-      <h2 className={styles.register__title}>結帳</h2>
+    <section className={styles.progress__container}>
+      <h2 className={styles.progress__title}>結帳</h2>
       <ProgressStep />
       <StepOne />
       <ProgressControl />

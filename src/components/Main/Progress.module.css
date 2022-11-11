@@ -1,4 +1,4 @@
-.register__container {
+.progress__container {
   margin: 0px 15px;
   max-width: 50%;
   height: 670px;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.register__title {
+.progress__title {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
