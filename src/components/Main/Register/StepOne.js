@@ -57,11 +57,13 @@ function SelectGroup({label, options}) {
 }
 
 export function InputGroup({id, label, placeholder}) {
+  let inputId = "input__" + id 
+
   return (
-    <div className= {`input__${id}`}>
+    <div className= {`${styles[inputId]}`}>
       <div className={styles.input__label}>{label}</div>
       <input type="text" placeholder={placeholder}/>
-    </div>   
+    </div>
   )
 }
 
