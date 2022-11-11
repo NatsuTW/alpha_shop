@@ -56,13 +56,16 @@ function SelectGroup({label, options}) {
   )
 }
 
-export function InputGroup({id, label, placeholder}) {
+export function InputGroup({id, label, type, placeholder, maxLength}) {
   let inputId = "input__" + id 
 
   return (
     <div className= {`${styles[inputId]}`}>
       <div className={styles.input__label}>{label}</div>
-      <input type="text" placeholder={placeholder}/>
+      <input 
+        type={type}
+        placeholder={placeholder}
+        maxLength={maxLength} />
     </div>
   )
 }
@@ -79,6 +82,7 @@ export default function StepOne() {
               />
               <InputGroup 
                 id= "name"
+                type="text"
                 label= "姓名"
                 placeholder= "請輸入姓名"
               />
@@ -86,11 +90,14 @@ export default function StepOne() {
           <div className={styles.input__container}>
               <InputGroup
                 id="mobile"
+                type="text"
                 label= "電話"
                 placeholder= "請輸入行動電話"
+                maxLength="10"
               />
               <InputGroup
                 id="email"
+                type="email"
                 label= "Email"
                 placeholder= "請輸入電子郵件"
               />
@@ -102,6 +109,7 @@ export default function StepOne() {
               />
               <InputGroup
                 id="address"
+                type="text"
                 label= "地址"
                 placeholder= "請輸入地址"
               />
