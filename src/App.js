@@ -1,11 +1,11 @@
-import Progress from './components/Main/Progress'
+import Main from './components/Main.js'
 
 import './reset.module.css'
 import './base.module.css'
 
 function App() {
   return (
-    <Progress />
+    <Main />
   );
 }
 
