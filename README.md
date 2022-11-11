@@ -1,6 +1,7 @@
 # Alpha Shop
 React框架練習專案，實作購物車頁面。（[點此見設計稿](https://www.figma.com/file/8D1kUmCDV02GGGroemX8SF/ACCapstone%3A-Frontend-UI)）
 
+目前畫面：
 ![index page](/public/image/a4_screen_shot.png)
 
 
