@@ -50,8 +50,13 @@ function ProductList({products, handlePlus, handleMinus}) {
 
 export default function Cart() {
   const [currentProducts, setCurrentProducts] = useState(products)
-  let total = null
-  currentProducts.map(product => total = total + product.price * product.quantity)
+
+  function isTotal() {
+    let total = null;
+    currentProducts.map(product => total = total + product.price * product.quantity)
+    
+    return total
+  }
 
   function handleClickPlus(id) {
     setCurrentProducts(currentProducts.map(product => {
@@ -92,7 +97,7 @@ export default function Cart() {
         </section>
         <section className={styles.cart__info}>
           <div className={styles.cart__text}>小計</div>
-          <div className={styles.cart__price}>{total}</div>
+        <div className={styles.cart__price}>${isTotal()}</div>
         </section>
       </section>
   )
