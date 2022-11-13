@@ -60,7 +60,7 @@ export function InputGroup({id, label, type, placeholder, maxLength}) {
   let inputId = "input__" + id 
 
   return (
-    <div className= {`${styles[inputId]}`}>
+    <div className= {inputId}>
       <div className={styles.input__label}>{label}</div>
       <input 
         type={type}
