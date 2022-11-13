@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.button[disabled] {
+  visibility: hidden;
+}
+
 .button__prev {
   background-color: transparent;
   line-height: 20px;
