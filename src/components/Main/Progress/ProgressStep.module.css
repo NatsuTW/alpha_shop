@@ -18,6 +18,13 @@
   margin: 0px 8px;
   border: 1.5px solid var(--done-progress-border);
   background-color: var(--done-progress-border)
+  
+}
+
+.progress__bar__undone {
+  composes: progress__bar;
+  border: 1.5px solid var(--undone-progress-border);
+  background-color: var(--undone-progress-border)
 }
 
 .progress__circle {
@@ -26,10 +33,21 @@
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  border-radius: 50%;
+}
+
+.progress__circle__done {
+  composes: progress__circle;
   color: var(--undone-progress-border);
   background-color: var(--pg-addr-bg-color);
-  border: 1px solid var(--progress-current-color);
-  border-radius: 50%;
+  border: 1px solid var(--pg-addr-bg-color);
+}
+
+.progress__circle__undone {
+  composes: progress__circle;
+  color: var(--progress-undone-color);
+  background-color: transparent;
+  border: 1px solid var(--progress-undone-color);
 }
 
 .progress__text {
@@ -45,5 +63,14 @@
 .progress__label {
   font-weight: 400;
   line-height: 24px;
-  color: var(--main-text); 
+}
+
+.progress__label__done {
+  composes: progress__label;
+  color: var(--progress-current-color)
+}
+
+.progress__label__undone {
+  composes: progress__label;
+  color: var(--progress-undone-color)
 }
