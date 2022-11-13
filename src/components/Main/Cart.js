@@ -10,14 +10,14 @@ const products = [
     name: '貓咪罐罐',
     img: 'https://picsum.photos/300/300?text=1',
     price: 100,
-    quantity: 0
+    quantity: 1
   },
   {
     id: '2',
     name: '貓咪干干',
     img: 'https://picsum.photos/300/300?text=2',
     price: 200,
-    quantity: 0
+    quantity: 1
   },
 ]
 
@@ -72,7 +72,7 @@ export default function Cart() {
   }
 
   function handleClickMinus(id) {
-    setCurrentProducts(currentProducts.map(product => {
+    let newCurrentProducts = currentProducts.map(product => {
       if (product.id === id && product.quantity > 0) {
         return {
           ...product,
@@ -81,7 +81,8 @@ export default function Cart() {
       } else {
         return product
       }
-    }))
+    }) 
+    setCurrentProducts(newCurrentProducts.filter(product => product.quantity !== 0))
   }
 
   return(
