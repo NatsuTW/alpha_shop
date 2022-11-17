@@ -16,25 +16,25 @@ export default function StepThree() {
         </div>
         <div className={styles.input__container}>
             <InputGroup 
-                id= "card__number"
+                id="card__number"
                 type="text"
-                label= "卡號"
-                placeholder= "1111 2222 3333 4444"
+                label="卡號"
+                placeholder="1111 2222 3333 4444"
             />
         </div>
         <div className={styles.input__container}>
             <InputGroup 
-                id= "card__date"
+                id="card__date"
                 type="text"
-                label= "有效期限"
-                placeholder= "MM/YY"
+                label="有效期限"
+                placeholder="MM/YY"
             />
             <InputGroup 
-                id= "card__cvc"
+                id="card__cvc"
                 type="text"
-                label= "CVC / CCV"
-                placeholder= "123"
-                maxLength= "3"
+                label="CVC / CCV"
+                placeholder="123"
+                maxLength="3"
             />
         </div>
       </section>

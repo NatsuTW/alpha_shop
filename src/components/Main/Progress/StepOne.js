@@ -81,37 +81,37 @@ export default function StepOne() {
                 options= {stepOneOption.title}
               />
               <InputGroup 
-                id= "name"
+                id="name"
                 type="text"
-                label= "姓名"
-                placeholder= "請輸入姓名"
+                label="姓名"
+                placeholder="請輸入姓名"
               />
           </div>
           <div className={styles.input__container}>
               <InputGroup
                 id="mobile"
                 type="text"
-                label= "電話"
-                placeholder= "請輸入行動電話"
+                label="電話"
+                placeholder="請輸入行動電話"
                 maxLength="10"
               />
               <InputGroup
                 id="email"
                 type="email"
-                label= "Email"
-                placeholder= "請輸入電子郵件"
+                label="Email"
+                placeholder="請輸入電子郵件"
               />
           </div>
           <div className={styles.input__container}>
               <SelectGroup
-                label= "縣市"
+                label="縣市"
                 options= {stepOneOption.city}
               />
               <InputGroup
                 id="address"
                 type="text"
-                label= "地址"
-                placeholder= "請輸入地址"
+                label="地址"
+                placeholder="請輸入地址"
               />
           </div>
         </section>

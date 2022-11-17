@@ -24,20 +24,20 @@ export default function StepTwo() {
         <div className={styles.radio__group__container}>
           <RadioGroup
           price= "0"
-          id= "shipping-standard"
-          name= "標準運送"
-          priceText= "免費"
-          period= "約 3~7 個工作天"
+          id="shipping-standard"
+          name="標準運送"
+          priceText="免費"
+          period="約 3~7 個工作天"
           checked={true}
           />
         </div>
         <div className={styles.radio__group__container}>
           <RadioGroup
-          price= "500"
-          id= "shipping-DHL"
-          name= "DHL貨運"
-          priceText= "$500"
-          period= "48小時內送達"
+          price="500"
+          id="shipping-DHL"
+          name="DHL貨運"
+          priceText="$500"
+          period="48小時內送達"
           checked={false}
         />
         </div>

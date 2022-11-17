@@ -22,20 +22,20 @@ export default function ProgressStep({ currentStep }) {
   return (
       <section className={styles.progress__container}>
         <Step
-          currentStep ={currentStep}
-          step= {1}
-          label= "寄送地址"
+          currentStep={currentStep}
+          step={1}
+          label="寄送地址"
         />
         <ProgressBar className={styles.progress__bar}/>        <Step
-          currentStep ={currentStep}
-          step= {2}
-          label= "運送方式"
+          currentStep={currentStep}
+          step={2}
+          label="運送方式"
         />
         <ProgressBar className={currentStep >= 2 ? styles.progress__bar : styles.progress__bar__undone}/>
         <Step
-          currentStep ={currentStep}
-          step= {3}
-          label= "付款資訊"
+          currentStep={currentStep}
+          step={3}
+          label="付款資訊"
         />
       </section>
   )
