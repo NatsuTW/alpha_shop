@@ -25,7 +25,7 @@ function ProductList({products, handlePlus, handleMinus}) {
   
   const productItems = products.map(product =>
     <div className = {styles.product__container} key={product.id}>
-      <img className={styles.product__image} src={product.img} alt={product.name} image/>
+      <img className={styles.product__image} src={product.img} alt={product.name} />
       <div className={styles.product__info}>
         <div className={styles.product__name}>{product.name}</div>
         <div className={styles.product__control__container}>
