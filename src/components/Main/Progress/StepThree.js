@@ -12,6 +12,7 @@ export default function StepThree() {
                 type="text"
                 label= "持卡人姓名"
                 placeholder= "John Doe"
+                name="cardName"                
             />
         </div>
         <div className={styles.input__container}>
@@ -20,6 +21,7 @@ export default function StepThree() {
                 type="text"
                 label="卡號"
                 placeholder="1111 2222 3333 4444"
+                name="cardNum"
             />
         </div>
         <div className={styles.input__container}>
@@ -28,6 +30,7 @@ export default function StepThree() {
                 type="text"
                 label="有效期限"
                 placeholder="MM/YY"
+                name="cardDate"  
             />
             <InputGroup 
                 id="card__cvc"
@@ -35,6 +38,7 @@ export default function StepThree() {
                 label="CVC / CCV"
                 placeholder="123"
                 maxLength="3"
+                name="cardCvc"
             />
         </div>
       </section>
