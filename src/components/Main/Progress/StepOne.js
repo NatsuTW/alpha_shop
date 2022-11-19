@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { FormContext } from "../../FormContext"
 import styles from "./StepOne.module.css"
 
 const stepOneOption = {
@@ -56,7 +58,8 @@ function SelectGroup({label, options}) {
   )
 }
 
-export function InputGroup({id, label, type, placeholder, maxLength}) {
+export function InputGroup({id, label, type, placeholder, maxLength, name}) {
+  const { handleInputChange } = useContext(FormContext)
   let inputId = "input__" + id 
 
   return (
@@ -65,7 +68,9 @@ export function InputGroup({id, label, type, placeholder, maxLength}) {
       <input 
         type={type}
         placeholder={placeholder}
-        maxLength={maxLength} />
+        maxLength={maxLength}
+        name={name}
+        onChange={e => { handleInputChange(e) }} />
     </div>
   )
 }
