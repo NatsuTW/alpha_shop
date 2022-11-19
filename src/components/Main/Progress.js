@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 import { CartContext } from '../CartContext';
+import { FormContext } from '../FormContext';
 import ProgressStep from "./Progress/ProgressStep";
 import ProgressControl from "./Progress/ProgressControl";
 import StepForm from './Progress/StepForm';
@@ -8,14 +9,15 @@ import styles from "./Progress.module.css"
 
 export default function Progress() {
   const [currentStep, setCurrentStep] = useState(1)
-  const {total} = useContext(CartContext)
-
+  const { total } = useContext(CartContext)
+  const { formInfo } = useContext(FormContext)
   function handleClickNext() {
     if(currentStep < 3)
     setCurrentStep(currentStep + 1)
 
     if(currentStep === 3) {
       console.log(`Total price is $${total()}`)
+      console.log(formInfo)
     }
   }
 
